@@ -16,6 +16,4 @@ Host someinternalhost
   ForwardAgent yes
 
 bastion_IP = 34.76.216.139
-someinternalhost_IP = 10.132.0.4
-
-
+someinternalhost_IP = 10.132.0.7
