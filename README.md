@@ -18,6 +18,6 @@ Host someinternalhost
 ```
 IP addresses for tests
 ```
-bastion_IP = 34.76.216.139
+bastion_IP = 35.195.91.35
 someinternalhost_IP = 10.132.0.7
 ```
