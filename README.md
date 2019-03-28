@@ -44,4 +44,8 @@ gcloud compute firewall-rules create puma-server \
     --no-disabled
 ```
 
-
+Cloud testapp creds for tests
+```
+testapp_IP = 35.204.120.105
+testapp_port = 9292
+```
