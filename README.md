@@ -49,3 +49,19 @@ Cloud testapp creds for tests
 testapp_IP = 35.204.120.105
 testapp_port = 9292
 ```
+
+Buld immutable image with app
+```
+packer validate -var-file variables.json immutable.json
+packer build -var-file variables.json immutable.json
+```
+
+Deploy with gcloud
+```
+gcloud compute instances create reddit-app\         
+  --boot-disk-size=10GB \
+  --image-family reddit-full \
+  --machine-type=g1-small \
+  --tags puma-server \
+  --restart-on-failure
+```
