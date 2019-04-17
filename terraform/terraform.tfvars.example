@@ -1,4 +1,4 @@
 project = "1234567890"
-public_key_path = "~/.ssh/test.pub"
-private_key_path = "~/.ssh/test"
+public_key_path = "~/.ssh/appuser.pub"
+private_key_path = "~/.ssh/appuser"
 disk_image = "image"
