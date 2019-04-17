@@ -65,3 +65,6 @@ gcloud compute instances create reddit-app\
   --tags puma-server \
   --restart-on-failure
 ```
+
+Добавлен конфиг terraform, который создает инстанс в GCP и деплоит приложение.
+
