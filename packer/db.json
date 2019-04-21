@@ -1,0 +1,22 @@
+{
+    "builders": [
+        {
+            "type": "googlecompute",
+            "project_id": "{{ user `project_id` }}",
+            "image_name": "{{ user `db_image_name` }}-{{timestamp}}",
+            "image_family": "{{ user `db_image_name` }}",
+            "source_image_family": "{{ user `source_image_family` }}",
+            "zone": "europe-west1-b",
+            "ssh_username": "andrey",
+            "machine_type": "{{ user `machine_type` }}"
+        }
+    ],
+    "provisioners": [
+        {
+            "type": "shell",
+            "script": "scripts/install_mongodb.sh",
+            "execute_command": "sudo {{.Path}}"
+        }
+    ] 
+}
+
