@@ -67,4 +67,12 @@ gcloud compute instances create reddit-app\
 ```
 
 Добавлен конфиг terraform, который создает инстанс в GCP и деплоит приложение.
+```
+terraform plan
+terraform apply
+```
 
+Форматирование .tf файлов
+```
+terraform fmt
+```

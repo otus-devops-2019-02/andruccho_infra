@@ -1,5 +1,7 @@
 {
   "project_id": "1234567890",
   "source_image_family": "ubuntu-1604-lts",
-  "machine_type": "f1-micro"
+  "machine_type": "f1-micro",
+  "app_image_name": "reddit-app-base",
+  "db_image_name": "reddit-db-base"
 }
