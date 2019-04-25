@@ -76,3 +76,14 @@ terraform apply
 ```
 terraform fmt
 ```
+
+Добавили ansible плейбуки для установки пакетов на db и app серверы с вызовом из packer provisioners
+```
+ansible/packer_app.yml
+ansible/packer_db.yml
+```
+
+Добавили ansible плейбук для конфигурирования db и app серверов и деплоя приложения. Запуск:
+```
+ansible-playbook ansible/site.yml
+```
