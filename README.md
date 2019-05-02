@@ -79,11 +79,19 @@ terraform fmt
 
 Добавили ansible плейбуки для установки пакетов на db и app серверы с вызовом из packer provisioners
 ```
-ansible/packer_app.yml
-ansible/packer_db.yml
+ansible/playbooks/packer_app.yml
+ansible/playbooks/packer_db.yml
 ```
 
-Добавили ansible плейбук для конфигурирования db и app серверов и деплоя приложения. Запуск:
+Добавили ansible плейбук для конфигурирования db и app серверов и деплоя приложения. Добавили окружения stage и prod. Запуск в окружении stage:
 ```
-ansible-playbook ansible/site.yml
+ansible-playbook playbooks/site.yml
+```
+
+Добавили роль из ansible galaxy – установка nginx и сконфигурировали чтобы приложение было доступно на 80 порту.
+
+Добавили роль создания userов с помощью Vault. Для использования Vault на MacOS
+```
+sudo easy_install pip
+pip install passlib
 ```
