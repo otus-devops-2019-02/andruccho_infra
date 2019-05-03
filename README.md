@@ -95,3 +95,21 @@ ansible-playbook playbooks/site.yml
 sudo easy_install pip
 pip install passlib
 ```
+
+Команды Vagrant
+```
+vagrant up
+vagrant status
+vagrant ssh appserver
+vagrant provision dbserver
+vagrant destroy -f
+```
+
+Команды Molecule
+```
+molecule init scenario --scenario-name default -r db -d vagrant
+molecule create
+molecule list
+molecule converge
+molecule verify
+```
