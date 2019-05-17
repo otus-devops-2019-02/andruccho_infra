@@ -2,7 +2,8 @@
 - name: Install MongoDB 3.2
   hosts: all
   become: true
-  roles: db
+  roles: 
+    - db
 # tasks:
 # # Добавим ключ репозитория для последующей работы с ним
 # - name: Add APT key
