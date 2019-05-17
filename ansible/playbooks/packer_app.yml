@@ -3,13 +3,13 @@
   hosts: all
   become: true
   roles: app
-  # tasks:
-  # # Установим в цикле все зависимости
-  # - name: Install ruby and rubygems and required packages
-  #   apt:
-  #     name: "{{ packages }}"
-  #   vars:
-  #     packages:
-  #     - ruby-full
-  #     - ruby-bundler
-  #     - build-essential
+# tasks:
+# # Установим в цикле все зависимости
+# - name: Install ruby and rubygems and required packages
+#   apt:
+#     name: "{{ packages }}"
+#   vars:
+#     packages:
+#     - ruby-full
+#     - ruby-bundler
+#     - build-essential
